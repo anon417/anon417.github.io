@@ -9,7 +9,7 @@ const app = express()
 app.use(cors())
 const port = 4000;
 
-const raw = fs.readFileSync('data.csv').toString().split("\n")
+const raw = fs.readFileSync(join(__dirname, 'config', 'ci.yml'), 'utf8').toString().split("\n")
 let data = []
 
 raw.map((line) => {
