@@ -4,12 +4,13 @@ const csv = require('csv');
 const fs = require('fs');
 
 require('dotenv').config()
+const { join } = require('path');
 
 const app = express()
 app.use(cors())
 const port = 4000;
 
-const raw = fs.readFileSync(join(__dirname, 'config', 'ci.yml'), 'utf8').toString().split("\n")
+const raw = fs.readFileSync(join(__dirname, 'data.csv'), 'utf8').toString().split("\n")
 let data = []
 
 raw.map((line) => {
