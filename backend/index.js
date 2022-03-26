@@ -5,6 +5,7 @@ const fs = require('fs');
 
 const app = express()
 app.use(cors())
+const port = process.env.PORT || 5000;
 
 const raw = fs.readFileSync('data.csv').toString().split("\n")
 let data = []
@@ -25,8 +26,9 @@ raw.map((line) => {
     )
 })
 
+
 app.get('/', (req, res) => {
     res.json(data)
 })
 
-app.listen(4000);
+app.listen(port);
