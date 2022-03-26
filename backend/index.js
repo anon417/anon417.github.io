@@ -3,6 +3,8 @@ const cors = require('cors');
 const csv = require('csv');
 const fs = require('fs');
 
+require('dotenv').config()
+
 const app = express()
 app.use(cors())
 const port = process.env.PORT || 5000;
