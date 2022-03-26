@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    
+    <script type="text/javascript" src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBaxQVxYmgGU-td_YT8Q-gdyfNf9UskNcc"></script>
+    <script type="text/javascript" src = "map.js"></script>
+</head>
+
+<body onload="initialize()">
+    <div class = "content">
+        <div class = "header">
+            <img src="logo2.svg" alt="Logo" id="logo-img">
+            <h1>Kernel</h1>
+        </div>
+        <div class = "container">
+            <section class = "cont">
+                <div class = "row">
+                    <div id = "col1">
+                        <h4>Utilization:</h4>
+                            <p>· Click on the location markers to see the data statistics for each NYC District
+                                <br><br>
+                                · Graphs below show the correlation between ____
+                            </p>
+                    </div>
+                    <div id = "col2">
+                        <h2>The Issue</h2>
+                            <p>This website is giving a visualization of the disparities in our healthcare system that were exacerbated by Covid-19. As you look through our map notice how our entire system is broken and living quality should be improved.</p>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section class = "cont">
+                <div class="row" id = "maprow">
+                    <div id = "map"> </div>
+                    
+                    <div id = "col3">
+                        <div id = "map-content">
+                            <h2>Statistics</h2>
+                            <p class="x">District: </p> <p class="stats" id="district"></p>
+                            <br>
+                            <p class="x">Unemployment:</p> <p class = "stats" id="unemployment"></p>
+                            <br>
+                            <p class="x">Annual Income ($1000s): </p> <p class = "stats" id="annual"></p>
+                            <br>
+                            <p class="x">Unmet Medical Care (%):</p> <p class = "stats" id="unmet"></p>
+                            <br>
+                            <p class="x">Uninsured (%): </p> <p class = "stats" id="uninsured"></p>
+                            <br>
+                            <p class="x">Avoidable Adult Hospitality: </p> <p class = "stats" id="avoid"></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+
+            <section class = "cont">
+                <div class="row"></div>
+                    <div id = 'col4'>
+                        <p>haha statistics haha</p>
+                    </div>
+                    <div id = 'col5'>
+                        <img src="" alt="">
+                    </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
