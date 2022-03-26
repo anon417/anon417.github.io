@@ -13,7 +13,7 @@ async function initialize(){
     reader.readAsText(data);
     debug.log(reader);*/
 
-    let response = await fetch('http://localhost:4000/');
+    let response = await fetch('https://help-eight.vercel.app/');
     let data = await response.json();
 
     var mapOptions = {
