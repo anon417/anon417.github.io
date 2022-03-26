@@ -7,9 +7,9 @@ require('dotenv').config()
 
 const app = express()
 app.use(cors())
-const port = process.env.PORT || 5000;
+const port = 4000;
 
-const raw = fs.readFileSync('./data.csv').toString().split("\n")
+const raw = fs.readFileSync('data.csv').toString().split("\n")
 let data = []
 
 raw.map((line) => {
